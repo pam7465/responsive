@@ -14,6 +14,10 @@
         .header{
             padding:20px;
             background-color:black;
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
         }
         .header>h1{
             margin-bottom:20px;
@@ -28,6 +32,7 @@
         }
         .sec{
             padding:40px 20px;
+            padding-top:calc(40px + 166px);
         }
         .sec>h2{
             margin-bottom:20px;
@@ -63,6 +68,9 @@
                 flex-flow:row;
                 justify-content:space-between;
             }
+            .sec{
+                padding-top:calc(40px + 83px);
+            }
             .sec>h2{
                 text-align:center;
             }
@@ -74,6 +82,7 @@
         @media (min-width:1201px){
             .header{
                 background-color:white;
+                position:static;
             }
             .header>h1{
                 width:calc(100% - 220px);
@@ -82,6 +91,7 @@
                 color:black;
             }
             .sec{
+                padding-top:40px;
                 background-color:black;
             }
             .sec>h2{
