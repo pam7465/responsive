@@ -23,6 +23,9 @@
             color:white;
             text-decoration:none;
         }
+        .header>ol{
+            list-style:none;
+        }
         .sec{
             padding:40px 20px;
         }
@@ -44,7 +47,7 @@
 
 
         /* 700px ~ 1200px 스타일 시작 */
-        @media (min-width:700px) and (max-width:1280px){
+        @media (min-width:700px){
             .header{
                display:flex; 
                flex-flow:row;
@@ -60,9 +63,42 @@
                 flex-flow:row;
                 justify-content:space-between;
             }
+            .sec>h2{
+                text-align:center;
+            }
         }
         /* 700px ~ 1200px 스타일 끝 */
-        
+
+
+        /* 1201px 이상 스타일 시작 */
+        @media (min-width:1201px){
+            .header{
+                background-color:white;
+            }
+            .header>h1{
+                width:calc(100% - 220px);
+            }
+            .header a{
+                color:black;
+            }
+            .sec{
+                background-color:black;
+            }
+            .sec>h2{
+                text-align:left;
+                font-size:36px;
+                color:white;
+            }
+            .sec>p{
+                color:white;
+            }
+            .footer{
+                background-color:white;
+            }
+            .footer>address{
+                color:black;
+            }
+        }
     </style>
 </head>
 <body>
